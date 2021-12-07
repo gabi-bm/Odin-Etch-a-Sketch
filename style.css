@@ -1,13 +1,14 @@
 body{
-    background-color: rgb(236, 235, 230);
+    background: repeating-linear-gradient(-45deg, rgb(54, 54, 54) 0%, rgb(71, 71, 71) 10%, rgb(54, 54, 54) 20%);
+    color: rgb(243, 242, 229);
 }
 
 .title {
     margin: 20px auto;
     text-align: center;
-    color: #FFD133;
+    color: #daa806;
     font-family: 'Dancing Script', cursive;
-    font-size: 60px;
+    font-size: 70px;
 }
 
 .board {
@@ -15,16 +16,17 @@ body{
     display: grid;
     width: 400px;
     height: 400px;
-    border: black 2px solid;
+    box-shadow: 0 0 3px 2px #daa806;
+    background-color: white;
+}
+
+.board:hover {
+    cursor: pointer;
 }
 
 .pixel {
     box-sizing: border-box;
     border: rgb(231, 231, 230) 1px solid;
-}
-
-.pixel-hover {
-    background-color: rgb(51, 53, 53);
 }
 
 .controls {
